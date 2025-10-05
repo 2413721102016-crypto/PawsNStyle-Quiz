@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------
+//  --------------------------------------------------------------------------
 // 1. DATA DEFINITIONS (Paw-sonas, Questions, Mapping)
 // --------------------------------------------------------------------------
 
@@ -15,9 +15,9 @@ const pawsonaData = {
         description: "Comfort first — plush sweaters, pastel bows, and cozy beds are their love language.",
         colorClass: "result-color-chill",
         products: [
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Cloud Snuggle Hoodie", price: "₹799" },
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Pastel Bow Pack", price: "₹299" },
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Fleece Lounge Blanket", price: "₹499" },
+            { img: "Cloud Snuggle Hoodie.jpeg", name: "Cloud Snuggle Hoodie", price: "₹799" },
+            { img: "Pastel Bow.jpeg", name: "Pastel Bow Pack", price: "₹299" },
+            { img: "Chill-Blanket.jpeg", name: "Fleece Lounge Blanket", price: "₹499" },
         ],
         bundle: "Cozy Combo: Hoodie + Bow Pack ₹999 (save ₹100)"
     },
@@ -27,9 +27,9 @@ const pawsonaData = {
         description: "Elegance & flair — velvet textures, designer bows and limited drops suit their style.",
         colorClass: "result-color-trend",
         products: [
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Furry Royal Suit", price: "₹1999" },
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Trendy%20Bow.jpeg", name: "Crystal Bow Tie", price: "₹549" },
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Limited Crown Cap", price: "₹799" },
+            { img: "Fancy Suit.jpeg", name: "Furry Royal Suit", price: "₹1999" },
+            { img: "Trendy Bow.jpeg", name: "Crystal Bow Tie", price: "₹549" },
+            { img: "Crowwn Cap.jpeg", name: "Limited Crown Cap", price: "₹799" },
         ],
         bundle: "Glam Trio — Jacket + Bow + Cap ₹2899 (exclusive)"
     },
@@ -39,9 +39,9 @@ const pawsonaData = {
         description: "Active, brave, and always ready — breathable sporty wear and reflective harnesses make their day.",
         colorClass: "result-color-playground",
         products: [
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Reflective%20harness.jpeg", name: "Reflective Harness", price: "₹699" },
-            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Treat%20Ball.jpeg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
+            { img: "Breathable Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
+            { img: "Reflective harness.jpeg", name: "Reflective Harness", price: "₹699" },
+            { img: "Treat Ball.jpeg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
         ],
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
     }
@@ -345,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
 
 
 
