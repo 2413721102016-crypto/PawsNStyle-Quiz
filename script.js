@@ -345,3 +345,4 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
