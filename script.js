@@ -6,11 +6,11 @@ const pawsonaData = {
         colorClass: "result-color-chill",
         products: [
             // Matches: Cloud Snuggle Hoodie.jpg
-            { img: "Cloud Snuggle Hoodie.jpg", name: "Cloud Snuggle Hoodie", price: "₹799" },
+            { img: Cloud Snuggle Hoodie.jpg, name: "Cloud Snuggle Hoodie", price: "₹799" },
             // Matches: Pastel Bow.jpg (used for both bow products)
-            { img: "Pastel Bow.jpg", name: "Pastel Bow Pack", price: "₹299" },
+            { img: Pastel Bow.jpg , name: "Pastel Bow Pack", price: "₹299" },
             // Matches: Chill-Blanket.jpg
-            { img: "Chill-Blanket.jpg", name: "Fleece Lounge Blanket", price: "₹499" },
+            { img: Chill-Blanket.jpg , name: "Fleece Lounge Blanket", price: "₹499" },
         ],
         bundle: "Cozy Combo: Hoodie + Bow Pack ₹999 (save ₹100)"
     },
@@ -21,11 +21,11 @@ const pawsonaData = {
         colorClass: "result-color-trend",
         products: [
             // Matches: Fancy Suit.jpg
-            { img: "Fancy Suit.jpg", name: "Furry Royal Suit", price: "₹1999" },
+            { img: Fancy Suit.jpg , name: "Furry Royal Suit", price: "₹1999" },
             // Matches: Pastel Bow.jpg (used for Crystal Bow Tie)
-            { img: "Pastel Bow.jpg", name: "Crystal Bow Tie", price: "₹549" },
+            { img: Pastel Bow.jpg , name: "Crystal Bow Tie", price: "₹549" },
             // Matches: Crowwn Cap.jpg
-            { img: "Crowwn Cap.jpg", name: "Limited Crown Cap", price: "₹799" },
+            { img: Crowwn Cap.jpg, name: "Limited Crown Cap", price: "₹799" },
         ],
         bundle: "Glam Trio — Jacket + Bow + Cap ₹2899 (exclusive)"
     },
@@ -45,3 +45,4 @@ const pawsonaData = {
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
     }
 };
+
