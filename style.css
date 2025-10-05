@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- */
-/* 1. ROOT VARIABLES & THEME                       */
+/* 1. ROOT VARIABLES & THEME                       */
 /* -------------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
@@ -30,7 +30,7 @@ body {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 2. LAYOUT & HEADER                          */
+/* 2. LAYOUT & HEADER                          */
 /* -------------------------------------------------------------------------- */
 .header-bar {
     background-color: var(--color-coral-header);
@@ -58,7 +58,7 @@ main {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 3. QUIZ CARDS                               */
+/* 3. QUIZ CARDS                               */
 /* -------------------------------------------------------------------------- */
 .quiz-card {
     background-color: #ffffff;
@@ -128,7 +128,7 @@ main {
 }
 
 /* -------------------------------------------------------------------------- */
-/* 4. BUTTONS & CTAS                           */
+/* 4. BUTTONS & CTAS                           */
 /* -------------------------------------------------------------------------- */
 .btn-primary, .btn-secondary {
     padding: 12px 25px;
@@ -140,6 +140,8 @@ main {
     text-align: center;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Ensure border is set here so secondary button border isn't overwritten */
+    border: none; 
 }
 
 .btn-primary {
@@ -155,11 +157,19 @@ main {
 .btn-secondary {
     background-color: #f0f0f0;
     color: var(--color-text-dark);
-    border: 1px solid #ddd;
+    /* Replaced border property with a transparent border for better click area */
+    border: 2px solid #ddd; 
+}
+
+/* ENHANCEMENT: Added hover state for secondary button */
+.btn-secondary:hover {
+    background-color: #e5e5e5;
+    border-color: #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* -------------------------------------------------------------------------- */
-/* 5. RESULT CARD                              */
+/* 5. RESULT CARD                              */
 /* -------------------------------------------------------------------------- */
 
 .result-card h2 {
