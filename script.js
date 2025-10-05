@@ -39,7 +39,7 @@ const pawsonaData = {
         description: "Active, brave, and always ready — breathable sporty wear and reflective harnesses make their day.",
         colorClass: "result-color-playground",
         products: [
-            { img: "C:\Users\Samanvitha Kapu\Downloads\Breathable Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
+            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
             { img: "C:\Users\Samanvitha Kapu\Downloads\Reflective harness.jpeg", name: "Reflective Harness", price: "₹699" },
             { img: "C:\Users\Samanvitha Kapu\Downloads\Treat Ball.jpeg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
         ],
@@ -345,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
 
 
 
