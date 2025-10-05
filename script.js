@@ -29,7 +29,7 @@ const pawsonaData = {
         products: [
             { img: "C:\Users\Samanvitha Kapu\Downloads\Fancy Suit.jpeg", name: "Furry Royal Suit", price: "₹1999" },
             { img: "C:\Users\Samanvitha Kapu\Downloads\Trendy Bow.jpeg", name: "Crystal Bow Tie", price: "₹549" },
-            { img: "C:\Users\Samanvitha Kapu\Downloads\Crowwn Cap.jpeg", name: "Limited Crown Cap", price: "₹799" },
+            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Limited Crown Cap", price: "₹799" },
         ],
         bundle: "Glam Trio — Jacket + Bow + Cap ₹2899 (exclusive)"
     },
@@ -345,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
 
 
 
