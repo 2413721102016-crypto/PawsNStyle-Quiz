@@ -40,7 +40,7 @@ const pawsonaData = {
         colorClass: "result-color-playground",
         products: [
             { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
-            { img: "harness", name: "Reflective Harness", price: "₹699" },
+            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Reflective%20harness.jpeg", name: "Reflective Harness", price: "₹699" },
             { img: "C:\Users\Samanvitha Kapu\Downloads\Treat Ball.jpeg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
         ],
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
@@ -345,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
 
 
 
