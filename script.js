@@ -15,8 +15,8 @@ const pawsonaData = {
         description: "Comfort first — plush sweaters, pastel bows, and cozy beds are their love language.",
         colorClass: "result-color-chill",
         products: [
-            { img: "chill_hoodie.jpg", name: "Cloud Snuggle Hoodie", price: "₹799" },
-            { img: "chill_bow_pack.jpg", name: "Pastel Bow Pack", price: "₹299" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\You Matter Paw Hoodie — Comfrt.jpeg", name: "Cloud Snuggle Hoodie", price: "₹799" },
+            { img: "https://pin.it/5Utze2D4j", name: "Pastel Bow Pack", price: "₹299" },
             { img: "chill_blanket.jpg", name: "Fleece Lounge Blanket", price: "₹499" },
         ],
         bundle: "Cozy Combo: Hoodie + Bow Pack ₹999 (save ₹100)"
@@ -343,4 +343,5 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.quizCard.classList.add('hidden');
     elements.resultCard.classList.add('hidden');
     elements.introCard.classList.remove('hidden');
+
 });
