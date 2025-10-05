@@ -17,7 +17,7 @@ const pawsonaData = {
         products: [
             { img: "C:\Users\Samanvitha Kapu\Downloads\You Matter Paw Hoodie — Comfrt.jpeg", name: "Cloud Snuggle Hoodie", price: "₹799" },
             { img: "https://pin.it/5Utze2D4j", name: "Pastel Bow Pack", price: "₹299" },
-            { img: "chill_blanket.jpg", name: "Fleece Lounge Blanket", price: "₹499" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\chill_blanket.jpeg", name: "Fleece Lounge Blanket", price: "₹499" },
         ],
         bundle: "Cozy Combo: Hoodie + Bow Pack ₹999 (save ₹100)"
     },
@@ -27,9 +27,9 @@ const pawsonaData = {
         description: "Elegance & flair — velvet textures, designer bows and limited drops suit their style.",
         colorClass: "result-color-trend",
         products: [
-            { img: "trend_jacket.jpg", name: "Velvet Royal Jacket", price: "₹1999" },
-            { img: "trend_bow_tie.jpg", name: "Crystal Bow Tie", price: "₹549" },
-            { img: "trend_cap.jpg", name: "Limited Crown Cap", price: "₹799" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\Fancy Suit.jpeg", name: "Furry Royal Suit", price: "₹1999" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\Trendy Bow.jpeg", name: "Crystal Bow Tie", price: "₹549" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\Crowwn Cap.jpeg", name: "Limited Crown Cap", price: "₹799" },
         ],
         bundle: "Glam Trio — Jacket + Bow + Cap ₹2899 (exclusive)"
     },
@@ -39,9 +39,9 @@ const pawsonaData = {
         description: "Active, brave, and always ready — breathable sporty wear and reflective harnesses make their day.",
         colorClass: "result-color-playground",
         products: [
-            { img: "playground_vest.jpg", name: "Breathable Sport Vest", price: "₹899" },
-            { img: "playground_harness.jpg", name: "Reflective Harness", price: "₹699" },
-            { img: "playground_ball.jpg", name: "Rubber Ball Pack", price: "₹299" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\Breathable Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\Reflective harness.jpeg", name: "Reflective Harness", price: "₹699" },
+            { img: "C:\Users\Samanvitha Kapu\Downloads\Treat Ball.jpeg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
         ],
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
     }
@@ -345,4 +345,5 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
 
