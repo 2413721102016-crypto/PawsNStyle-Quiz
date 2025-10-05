@@ -1,4 +1,4 @@
-//  --------------------------------------------------------------------------
+// --------------------------------------------------------------------------
 // 1. DATA DEFINITIONS (Paw-sonas, Questions, Mapping)
 // --------------------------------------------------------------------------
 
@@ -8,6 +8,13 @@ const PAWSONA_KEYS = {
     PLAYGROUND: 'Playground'
 };
 
+// *** CRITICAL UPDATE 1: NEW BASE IMAGE URL ***
+// This uses the simple relative path. It assumes the 'Images' folder is in the same
+// directory as your index.html file, or the root of your deployment.
+// If your GitHub Pages URL is https://user.github.io/repo/index.html,
+// the image URL will resolve to https://user.github.io/repo/Images/ImageName.jpg
+const BASE_IMAGE_PATH = "/Images/"; 
+
 const pawsonaData = {
     [PAWSONA_KEYS.CHILL]: {
         title: "Chill Champ 🛋️",
@@ -15,9 +22,10 @@ const pawsonaData = {
         description: "Comfort first — plush sweaters, pastel bows, and cozy beds are their love language.",
         colorClass: "result-color-chill",
         products: [
-            { img: "Cloud Snuggle Hoodie.jpeg", name: "Cloud Snuggle Hoodie", price: "₹799" },
-            { img: "Pastel Bow.jpeg", name: "Pastel Bow Pack", price: "₹299" },
-            { img: "Chill-Blanket.jpeg", name: "Fleece Lounge Blanket", price: "₹499" },
+            // *** CRITICAL UPDATE 2: NEW FILENAMES ***
+            { img: "Cloud Snuggle Hoodie.jpg", name: "Cloud Snuggle Hoodie", price: "₹799" },
+            { img: "Pastel Bow.jpg", name: "Pastel Bow Pack", price: "₹299" },
+            { img: "Chill-Blanket.jpg", name: "Fleece Lounge Blanket", price: "₹499" },
         ],
         bundle: "Cozy Combo: Hoodie + Bow Pack ₹999 (save ₹100)"
     },
@@ -27,9 +35,9 @@ const pawsonaData = {
         description: "Elegance & flair — velvet textures, designer bows and limited drops suit their style.",
         colorClass: "result-color-trend",
         products: [
-            { img: "Fancy Suit.jpeg", name: "Furry Royal Suit", price: "₹1999" },
-            { img: "Trendy Bow.jpeg", name: "Crystal Bow Tie", price: "₹549" },
-            { img: "Crowwn Cap.jpeg", name: "Limited Crown Cap", price: "₹799" },
+            { img: "Fancy Suit.jpg", name: "Furry Royal Suit", price: "₹1999" },
+            { img: "Pastel Bow.jpg", name: "Crystal Bow Tie", price: "₹549" }, // Reusing Pastel Bow image as per your list
+            { img: "Crowwn Cap.jpg", name: "Limited Crown Cap", price: "₹799" },
         ],
         bundle: "Glam Trio — Jacket + Bow + Cap ₹2899 (exclusive)"
     },
@@ -39,9 +47,9 @@ const pawsonaData = {
         description: "Active, brave, and always ready — breathable sporty wear and reflective harnesses make their day.",
         colorClass: "result-color-playground",
         products: [
-            { img: "Breathable Vesst.jpeg", name: "Breathable Sport Vest", price: "₹899" },
-            { img: "Reflective harness.jpeg", name: "Reflective Harness", price: "₹699" },
-            { img: "Treat Ball.jpeg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
+            { img: "Breathable Vesst.jpg", name: "Breathable Sport Vest", price: "₹899" },
+            { img: "Reflective harness.jpg", name: "Reflective Harness", price: "₹699" },
+            { img: "Treat Ball.jpg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
         ],
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
     }
@@ -179,7 +187,6 @@ function updateNavigation() {
         elements.nextButton.textContent = 'Next Question →';
     }
     
-    // Disable Next button if current question is unanswered (optional for auto-advance, but good safety)
     // elements.nextButton.disabled = !isAnswered; 
 }
 
@@ -254,14 +261,20 @@ function showResults() {
         <h3 class="text-xl font-bold mb-4 text-center">Curated Picks Just For You:</h3>
         
         <div class="grid grid-cols-3 gap-4 mb-4">
-            ${result.products.map(p => `
+            ${result.products.map(p => {
+                // *** CRITICAL UPDATE 3: Construct the final URL with URL Encoding ***
+                // Replaces spaces with %20, ensuring GitHub pages can find the file.
+                const fullImageUrl = BASE_IMAGE_PATH + p.img.replace(/ /g, '%20'); 
+                
+                return `
                 <div class="product-thumb">
-                    <img src="assets/images/${p.img}" alt="${p.name} - product image">
+                    <img src="${fullImageUrl}" alt="${p.name} - product image">
                     <div class="product-name text-sm font-semibold">${p.name}</div>
                     <div class="product-price text-xs">${p.price}</div>
                     <button class="text-xs font-bold text-white bg-coral-button mt-1 py-1 w-full rounded-full">Shop this look</button>
                 </div>
-            `).join('')}
+                `;
+            }).join('')}
         </div>
         
         <div class="bundle-suggestion text-center">
@@ -343,18 +356,4 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.quizCard.classList.add('hidden');
     elements.resultCard.classList.add('hidden');
     elements.introCard.classList.remove('hidden');
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
