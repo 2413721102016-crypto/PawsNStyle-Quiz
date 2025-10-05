@@ -17,7 +17,7 @@ const pawsonaData = {
         products: [
             { img: "C:\Users\Samanvitha Kapu\Downloads\You Matter Paw Hoodie — Comfrt.jpeg", name: "Cloud Snuggle Hoodie", price: "₹799" },
             { img: "https://pin.it/5Utze2D4j", name: "Pastel Bow Pack", price: "₹299" },
-            { img: "C:\Users\Samanvitha Kapu\Downloads\chill_blanket.jpeg", name: "Fleece Lounge Blanket", price: "₹499" },
+            { img: "https://github.com/2413721102016-crypto/PawsNStyle-Quiz/blob/main/assetsimages/Breathable%20Vesst.jpeg", name: "Fleece Lounge Blanket", price: "₹499" },
         ],
         bundle: "Cozy Combo: Hoodie + Bow Pack ₹999 (save ₹100)"
     },
@@ -345,6 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.introCard.classList.remove('hidden');
 
 });
+
 
 
 
