@@ -1,0 +1,219 @@
+/* -------------------------------------------------------------------------- */
+/* 1. ROOT VARIABLES & THEME                       */
+/* -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root {
+    /* Paws & Style Theme Colors */
+    --color-coral-header: #ff7f7f;
+    --color-coral-button: #ff5c5c;
+    --color-coral-hover: #fa4444;
+    --color-light-bg: #fff8f8;
+    --color-accent-bg: #ffe6e6; /* Light accent for cards */
+    --color-text-dark: #333333;
+    --color-text-light: #ffffff;
+    
+    /* Persona Colors for Visuals */
+    --color-chill: #98fb98; /* Mint Green */
+    --color-trend: #ffb6c1; /* Light Pink */
+    --color-playground: #87ceeb; /* Sky Blue */
+    
+    --font-family-primary: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-light-bg);
+    color: var(--color-text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 2. LAYOUT & HEADER                          */
+/* -------------------------------------------------------------------------- */
+.header-bar {
+    background-color: var(--color-coral-header);
+    color: var(--color-text-light);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-link {
+    display: none; /* Hide nav on mobile for simplicity */
+    font-weight: 600;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 3. QUIZ CARDS                               */
+/* -------------------------------------------------------------------------- */
+.quiz-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: var(--color-accent-bg);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-coral-header);
+    transition: width 0.4s ease-in-out;
+}
+
+/* Option Card Styling */
+.option-group {
+    display: grid;
+    gap: 12px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: var(--color-light-bg);
+    border: 2px solid var(--color-accent-bg);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    font-weight: 600;
+}
+
+.quiz-option:hover {
+    border-color: var(--color-coral-button);
+}
+
+.quiz-option input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* 🌟 VISUAL FEEDBACK (Selected State) */
+.quiz-option:has(input[type="radio"]:checked) {
+    border-color: var(--color-coral-button); 
+    background-color: var(--color-accent-bg); 
+    box-shadow: 0 0 0 3px rgba(255, 92, 92, 0.5); /* Soft outer glow */
+    transform: scale(1.01);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 4. BUTTONS & CTAS                           */
+/* -------------------------------------------------------------------------- */
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--color-coral-button);
+    color: var(--color-text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-coral-hover);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: var(--color-text-dark);
+    border: 1px solid #ddd;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 5. RESULT CARD                              */
+/* -------------------------------------------------------------------------- */
+
+.result-card h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.result-color-chill { background-color: var(--color-chill); }
+.result-color-trend { background-color: var(--color-trend); }
+.result-color-playground { background-color: var(--color-playground); }
+
+.product-thumb {
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.product-thumb img {
+    width: 100%;
+    height: 100px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--color-coral-button);
+}
+
+.bundle-suggestion {
+    border-radius: 1rem;
+    padding: 15px;
+    margin-top: 15px;
+    font-weight: 700;
+    background-color: var(--color-accent-bg);
+}
+
+/* Desktop/Tablet Styles (min-width: 768px) */
+@media (min-width: 768px) {
+    .header-bar {
+        padding: 15px 40px;
+    }
+    .nav-link {
+        display: inline-block;
+        margin-left: 25px;
+    }
+    main {
+        max-width: 700px;
+    }
+    .option-group {
+        grid-template-columns: 1fr 1fr;
+    }
+}
