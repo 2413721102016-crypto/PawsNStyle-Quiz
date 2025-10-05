@@ -38,12 +38,13 @@ const pawsonaData = {
             // Matches: Breathable Vesst.jpg
             { img: "BreathableVesst.jpg", name: "Breathable Sport Vest", price: "₹899" },
             // *** CRITICAL FIX HERE ***: Matches Reflective harness (1).jpg
-            { img: "Reflective harness (1).jpg", name: "Reflective Harness", price: "₹699" },
+            { img: "Reflective_harness.jpg", name: "Reflective Harness", price: "₹699" },
             // Matches: Treat Ball.jpg
-            { img: "Treat Ball.jpg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
+            { img: "Treat_Ball.jpg", name: "Thooth Cleaning Ball Pack", price: "₹299" },
         ],
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
     }
 };
+
 
 
