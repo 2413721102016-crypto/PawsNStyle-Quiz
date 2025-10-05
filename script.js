@@ -21,11 +21,11 @@ const pawsonaData = {
         colorClass: "result-color-trend",
         products: [
             // Matches: Fancy Suit.jpg
-            { img: Fancy Suit.jpg , name: "Furry Royal Suit", price: "₹1999" },
+            { img: Fancy_Suit.jpg , name: "Furry Royal Suit", price: "₹1999" },
             // Matches: Pastel Bow.jpg (used for Crystal Bow Tie)
-            { img: Pastel Bow.jpg , name: "Crystal Bow Tie", price: "₹549" },
+            { img: Pastel_Bow.jpg , name: "Crystal Bow Tie", price: "₹549" },
             // Matches: Crowwn Cap.jpg
-            { img: Crowwn Cap.jpg, name: "Limited Crown Cap", price: "₹799" },
+            { img: Crowwn_Cap.jpg, name: "Limited Crown Cap", price: "₹799" },
         ],
         bundle: "Glam Trio — Jacket + Bow + Cap ₹2899 (exclusive)"
     },
@@ -36,7 +36,7 @@ const pawsonaData = {
         colorClass: "result-color-playground",
         products: [
             // Matches: Breathable Vesst.jpg
-            { img: "Breathable Vesst.jpg", name: "Breathable Sport Vest", price: "₹899" },
+            { img: "BreathableVesst.jpg", name: "Breathable Sport Vest", price: "₹899" },
             // *** CRITICAL FIX HERE ***: Matches Reflective harness (1).jpg
             { img: "Reflective harness (1).jpg", name: "Reflective Harness", price: "₹699" },
             // Matches: Treat Ball.jpg
@@ -45,4 +45,5 @@ const pawsonaData = {
         bundle: "Active Pack — Vest + Harness ₹1490 (save ₹108)"
     }
 };
+
 
